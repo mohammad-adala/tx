@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="root.libyaguide.com.txx.user_info">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="Phone Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                android:layout_weight="0.20"
+                android:textStyle="normal|bold"
+                android:textColor="@color/abc_input_method_navigation_guard" />
+
+            <EditText
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:id="@+id/phone_number"
+                android:hint="type your phone number .."
+                android:text="type your phone number .."
+                android:layout_weight="0.92"
+                android:textSize="14sp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Password"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/pass"
+                android:layout_weight="0.70"
+                android:textStyle="normal|bold"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/password"
+                android:hint="type a password"
+                android:layout_weight="1.26"
+                android:textSize="14sp"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18">
+
+            <TextView
+                android:text="Confirm password"
+                android:layout_width="130dp"
+                android:layout_height="52dp"
+                android:id="@+id/pass_con"
+                android:elevation="9dp"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:textColor="@color/abc_input_method_navigation_guard" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/confirmpass"
+                android:hint="confirm your password"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Next >"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nxt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="casual" />
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_request1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="root.libyaguide.com.txx.request1"
+    android:orientation="vertical"
+    app:layout_collapseParallaxMultiplier="1.0"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:text="send a request to "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18"
+            android:id="@+id/textview1"
+            android:fontFamily="monospace"
+            android:textStyle="normal|bold"
+            android:textColor="?android:attr/textColorPrimaryActivated" />
+
+        <TextView
+            android:text="user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_weight="0.63"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Current location  "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_weight="0.00"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:typeface="monospace"
+        android:fontFamily="monospace"
+        android:textColor="@color/abc_input_method_navigation_guard" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:entries="@array/country" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:entries="@array/city" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="street"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Destination "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textStyle="normal|bold"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:textAlignment="center"
+        android:typeface="monospace"
+        android:fontFamily="monospace" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner4"
+            android:layout_weight="1"
+            android:entries="@array/country" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner3"
+            android:layout_weight="1"
+            android:entries="@array/city" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="street"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textAlignment="center"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:typeface="monospace"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.34"
+        android:layout_marginBottom="60dp">
+
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner5"
+            android:entries="@array/time" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:weightSum="1"
+            android:id="@+id/timechoose">
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/datePicker"
+                android:calendarViewShown="false"
+                android:fadeScrollbars="false"
+                android:duplicateParentState="false"
+                style="@android:style/Widget.DatePicker" />
+
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:id="@+id/timePicker"
+                style="@android:style/Widget.Holo.TimePicker"
+                android:layout_weight="0.10" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Send a Request"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:textAlignment="center"
+        android:layout_marginLeft="100dp" />
+
+</LinearLayout>
